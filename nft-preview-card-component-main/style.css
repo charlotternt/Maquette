@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+body{
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+   position: relative;
+   display: flex;
+   align-content: center;
+   justify-content: center;
+   overflow: hidden;
+   padding: 20px;
+}
+
+.content{
+    background-color: hsl(216, 50%, 16%);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content img{
+    object-fit: cover;
+    width: 100%;
+    height: 60%;
+    border-radius: 10px;
+}
+  
+.overlay {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    background: hsla(178, 100%, 50%, 0.469);
+    border-radius: 10px;
+    width: 50%;
+    height: 47%;
+    transition: .5s ease;
+    color: white;
+    opacity: 0;
+    padding: 20px;
+}
+
+.overlay img{
+    width: 60px;
+    height: 60px;
+}
+
+.content:hover .overlay {
+    opacity: 1;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.info p{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.info img{
+    width: 30%;
+    margin-right: 5px;
+}
+
+.ethereum{
+    color: hsl(178, 100%, 50%);
+}
+
+h1{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+p{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color:  hsl(215, 51%, 70%);
+}
+
+hr{
+    color: hsl(215, 32%, 27%),
+}
+
+.creator{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.creator img{
+    border: white solid 1px;
+    border-radius: 100%;
+    width: 10%;
+    height: 10%;
+    margin-right: 10px;
+}
+
+.name{
+    color: hsl(0, 0%, 100%);
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.name:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.creator p, .name{
+    font-size: 13px;
+}
+
+@media (min-width: 550px) { 
+
+    .content{
+       width: 60%;
+    }
+
+}
+
+@media (min-width: 800px){
+    .content{
+        width: 25%;
+    }
+
+    .overlay {
+        width: 21.5%;
+    }
+}
